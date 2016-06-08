@@ -1,2 +1,0 @@
-# codewords
-Codewords python library.
