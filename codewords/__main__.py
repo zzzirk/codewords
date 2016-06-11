@@ -12,6 +12,7 @@ def parse_args():
     parser.add_argument("--adjectives", default=CW_ADJECTIVES)
     parser.add_argument("--nouns", default=CW_NOUNS)
     parser.add_argument("--delimiters", default=CW_DELIMITERS)
+    parser.add_argument("--pattern", default=None)
     return parser.parse_args()
 
 
@@ -20,7 +21,7 @@ def main():
 
     g = CodeWordGenerator(adjfilename=args.adjectives, nounfilename=args.nouns,
                           delimiterfilename=args.delimiters)
-    print(g.generate())
+    print(g.generate(args.pattern))
 
 
 if __name__ == '__main__':
