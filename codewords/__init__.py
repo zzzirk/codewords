@@ -4,5 +4,13 @@ provided lists of words and delimiters.
 """
 
 from .gen import CodeWordGenerator
+from .version import __version__
 
-__all__ = [CodeWordGenerator]
+
+__all__ = ["CodeWordGenerator"]
+
+
+def get_version():
+    "Return the version of the library."
+    return __version__
+
