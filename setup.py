@@ -45,7 +45,7 @@ setup(
     license="bsd3",
 
     cmdclass={'pylint': PylintCommand},
-    test_suite="nose.collector",
+    # test_suite="nose.collector",
 
     packages=find_packages(),
 
@@ -56,10 +56,6 @@ setup(
     ],
 
     tests_require=[
-        'mock>=1.0',
-        'nose>=1.0',
-        'nosexcover>=1.0',
-        'pylint==1.1.0',
     ],
 
 )
