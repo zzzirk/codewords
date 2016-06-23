@@ -16,6 +16,22 @@ class CodeWordGenerator(object):
                  delimiterfilename="delimiters.txt", *args, **kwargs):
         random.seed()
         self.pattern = kwargs.pop("pattern", "{adjective}{delimiter}{noun}")
+        adjfile = kwargs.pop("adjfile", None)
+        nounfile = kwargs.pop("nounfile", None)
+        delimiterfile = kwargs.pop("delimiterfile", None)
+
+        for (fp, variable) in zip([adjfile, nounfile,
+                                   delimiterfile],
+                                  ["adjective_list", "noun_list",
+                                   "delimiter_list"]):
+            try:
+                if not fp:
+                    continue
+                setattr(self, variable,
+                        [line.strip() for line in fp.readlines()])
+            except IOError:
+                pass
+
         for (filename, variable) in zip([adjfilename, nounfilename,
                                          delimiterfilename],
                                         ["adjective_list", "noun_list",

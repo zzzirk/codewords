@@ -44,6 +44,8 @@ setup(
     url='https://stash.movenetworks.com/projects/OPSTOOLS/',
     license="bsd3",
 
+    test_suite="tests",
+
     cmdclass={'pylint': PylintCommand},
     # test_suite="nose.collector",
 
@@ -56,6 +58,7 @@ setup(
     ],
 
     tests_require=[
+        "mock==2.0.0",
     ],
 
 )
