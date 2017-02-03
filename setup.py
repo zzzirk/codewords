@@ -49,6 +49,12 @@ setup(
     cmdclass={'pylint': PylintCommand},
     # test_suite="nose.collector",
 
+    entry_points={
+        'console_scripts': [
+            'codewords=codewords.__main__:main',
+        ]
+    },
+
     packages=find_packages(),
 
     install_requires=[
