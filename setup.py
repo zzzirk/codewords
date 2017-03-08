@@ -41,9 +41,9 @@ setup(
     author="Louis Zirkel III",
     author_email="zzzirk@gmail.com",
     description='CodeWords python lbrary',
-    url='https://stash.movenetworks.com/projects/OPSTOOLS/',
+    url='https://github.com/zzzirk/codewords',
     license="bsd3",
-    keywords="codewords",
+    keywords="codewords codename codephrase code name phrase",
     test_suite="tests",
 
     cmdclass={'pylint': PylintCommand},
