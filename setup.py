@@ -43,7 +43,7 @@ setup(
     description='CodeWords python lbrary',
     url='https://stash.movenetworks.com/projects/OPSTOOLS/',
     license="bsd3",
-
+    keywords="codewords",
     test_suite="tests",
 
     cmdclass={'pylint': PylintCommand},
