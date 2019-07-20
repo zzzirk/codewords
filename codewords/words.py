@@ -64,7 +64,7 @@ NOUNS = [
     "kingdom",
     "knife",
     "knight",
-    "laserbeam"
+    "laserbeam",
     "lightning",
     "ninja",
     "palace",
